@@ -21,11 +21,11 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
 }
 
 .imagem-cabecalho {
-    height: 72px;
+    height: 4.5rem;
 }
 
 .menu-cabecalho {
@@ -36,7 +36,7 @@ body {
 .link-cabecalho {
     color: var(--cor-primaria);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 .link-cabecalho:hover {
@@ -114,17 +114,52 @@ body {
     padding-top: 40px;
     color: var(--cor-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .conteudo-secundario p {
     color: var(--cor-secundaria);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .imagem-rodape {
-    margin: 16px auto;
-    height: 48px;
+    margin: 1rem auto;
+    height: 3rem;
     display: block;
+}
+
+@media screen and (max-width: 840px) {
+    body {
+        width: 100%;
+    }
+
+    .cabecalho {
+        width: 100vw;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .menu-cabecalho {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .conteudo {
+        padding: 0 1rem;
+    }
+
+    .imagem-conteudo {
+        width: 12.5rem;
+    }
+
+    .conteudo-secundario {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .imagem-conteudo {
+        width: 9rem;
+    }
 }
